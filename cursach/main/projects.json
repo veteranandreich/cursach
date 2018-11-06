@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Kino",
+    "start": "summer 1981",
+    "end": "15.08.1990",
+    "leader": "Viktor Tsoi",
+    "executors": ["Yuri Kasparyan", "Alexander Titov", "Igor Tihomirov", "Georgiy Guryanov"],
+    "curstep": "3"
+
+  },
+
+  {
+    "id": "2",
+    "name": "DomainChecker",
+    "start": "01.09.2018",
+    "end": "01.09.2019",
+    "leader": "Vladimir Goncharov",
+    "executors": ["Vitalya", "Daydya Bogdan", "Grid Govna", "Andrey Beresnev"],
+    "curstep": "1"
+
+  }
+]

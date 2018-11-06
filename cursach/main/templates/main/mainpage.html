@@ -1,5 +1,39 @@
 {% extends "main/wrapper.html" %}
 {% block content %}
-<h3>Многие могут подумать что Чечьня-хуйня, но так ли это?</h3>
-    <p>Нет, Чечьня крута!</p>
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th style="text-align: center">id</th>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Date of start</th>
+      <th style="text-align: center">Ending date</th>
+      <th style="text-align: center">Leader</th>
+      <th style = "text-align: center">Executors</th>
+      <th style="text-align: center">Current step</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for project in x %}
+      <tr>
+      <th style="text-align: center">{{ project.id }}</th>
+      <td style="text-align: center">{{ project.name }}</td>
+      <td style="text-align: center">{{ project.start }}</td>
+      <td style="text-align: center">{{ project.end }}</td>
+      <td style="text-align: center">
+          <a href="{{ project.name }}/persons" title="Learn more about {{ project.leader }}"> {{ project.leader }} </a>
+      </td>
+      <td style="text-align: center">
+           <div class="list-group">
+          {% for person in project.executors %}
+              <a href="{{ project.name }}/persons " class="list-group-item" title="Learn more about {{ person }}"> {{ person }} </a>
+          {% endfor %}
+      </div>
+      </td>
+      <td style="text-align: center"> <a href="{{project.name}}"> {{ project.curstep }} </a> </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
 {% endblock %}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Kino",
+    "name": "Viktor",
+    "surname": "Tsoi",
+    "fath_name": "Robertovich",
+    "dob": "21.06.1962",
+    "role": "Leader"
+
+  },
+
+  {
+    "id": "DomainChecker",
+    "name": "Vladimir",
+    "surname": "Goncharov",
+    "fath_name": "Andreevich",
+    "dob": "27.01.2001",
+    "role": "Leader"
+
+  },
+
+  {
+    "id": "Kino",
+    "name": "Yuri",
+    "surname": "Kasparyan",
+    "fath_name": "Dmitrievich",
+    "dob": "24.06.1963",
+    "role": "Executor"
+
+  },
+
+  {
+    "id": "Kino",
+    "name": "Alexander",
+    "surname": "Titov",
+    "fath_name": "Valentinovich",
+    "dob": "18.07.1957",
+    "role": "Executor"
+
+  },
+
+  {
+    "id": "Kino",
+    "name": "Igor",
+    "surname": "Tihomirov",
+    "fath_name": "Dmitrievich",
+    "dob": "24.06.1963",
+    "role": "Executor"
+
+  },
+
+  {
+    "id": "Kino",
+    "name": "Georgiy",
+    "surname": "Guryanov",
+    "fath_name": "Konstantinovich",
+    "dob": "27.02.1961",
+    "role": "Executor"
+
+  }
+
+]
