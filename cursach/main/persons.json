@@ -1,6 +1,6 @@
 [
   {
-    "id": "Kino",
+    "project": "Kino",
     "name": "Viktor",
     "surname": "Tsoi",
     "fath_name": "Robertovich",
@@ -10,7 +10,7 @@
   },
 
   {
-    "id": "DomainChecker",
+    "project": "DomainChecker",
     "name": "Vladimir",
     "surname": "Goncharov",
     "fath_name": "Andreevich",
@@ -20,7 +20,7 @@
   },
 
   {
-    "id": "Kino",
+    "project": "Kino",
     "name": "Yuri",
     "surname": "Kasparyan",
     "fath_name": "Dmitrievich",
@@ -30,7 +30,7 @@
   },
 
   {
-    "id": "Kino",
+    "project": "Kino",
     "name": "Alexander",
     "surname": "Titov",
     "fath_name": "Valentinovich",
@@ -40,7 +40,7 @@
   },
 
   {
-    "id": "Kino",
+    "project": "Kino",
     "name": "Igor",
     "surname": "Tihomirov",
     "fath_name": "Dmitrievich",
@@ -50,7 +50,7 @@
   },
 
   {
-    "id": "Kino",
+    "project": "Kino",
     "name": "Georgiy",
     "surname": "Guryanov",
     "fath_name": "Konstantinovich",

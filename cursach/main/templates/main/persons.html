@@ -12,7 +12,7 @@
                 </thead>
                     <tbody>
                     {% for person in x %}
-                    {% if person.id == sitename %}
+                    {% if person.project == sitename %}
                         <tr>
                         <th style="text-align: center">{{ person.name }}</th>
                         <td style="text-align: center">{{ person.surname }}</td>
