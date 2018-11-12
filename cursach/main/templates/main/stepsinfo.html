@@ -1,0 +1,33 @@
+{% extends "main/wrapper.html" %}
+{% block content %}
+<table class="table table-bordered">
+    <thead class="bg-dark">
+    <tr>
+      <th style="text-align: center; color:white;">Project</th>
+      <th style="text-align: center; color:white;">ID</th>
+      <th style="text-align: center; color:white;">Step</th>
+      <th style="text-align: center; color:white;">Name</th>
+      <th style="text-align: center; color:white;">Description</th>
+      <th style="text-align: center; color:white;">Date of star</th>
+      <th style="text-align: center; color:white;">Ending date</th>
+      <th style="text-align: center; color:white;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for step in x %}
+      {% if step.project == y %}
+      <tr>
+      <th style="text-align: center">{{ step.project }}</th>
+      <th style="text-align: center">{{ step.id }}</th>
+      <td style="text-align: center">{{ step.num }}</td>
+      <td style="text-align: center">{{ step.name }}</td>
+      <td style="text-align: center">{{ step.desc }}</td>
+      <td style="text-align: center">{{ step.dos }}</td>
+      <td style="text-align: center">{{ step.doe }}</td>
+      <td style="text-align: center">{{ step.status }}</td>
+    </tr>
+      {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

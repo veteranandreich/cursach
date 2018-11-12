@@ -1,0 +1,29 @@
+{% extends "main/wrapper.html" %}
+{% block content %}
+<table class="table table-bordered">
+    <thead class="bg-dark">
+    <tr>
+      <th style="text-align: center; color:white;">Project</th>
+      <th style="text-align: center; color:white;">Surname</th>
+      <th style="text-align: center; color:white;">Name</th>
+      <th style="text-align: center; color:white;">Middlename</th>
+      <th style="text-align: center; color:white;">Date of Birth</th>
+      <th style="text-align: center; color:white;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for person in x %}
+      {% if person.project == y %}
+      <tr>
+      <th style="text-align: center">{{ person.project }}</th>
+      <td style="text-align: center">{{ person.surname }}</td>
+      <td style="text-align: center">{{ person.name }}</td>
+      <td style="text-align: center">{{ person.fath_name }}</td>
+      <td style="text-align: center">{{ person.dob }}</td>
+      <td style="text-align: center">{{ person.role }}</td>
+    </tr>
+      {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

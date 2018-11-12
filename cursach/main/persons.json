@@ -57,6 +57,96 @@
     "dob": "27.02.1961",
     "role": "Executor"
 
+  },
+ 
+  {
+    "project": "Kino",
+    "name": "Alexey",
+    "surname": "Rybin",
+    "fath_name": "Viktorovich",
+    "dob": "21.12.1960",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "DomainChecker",
+    "name": "Yuli",
+    "surname": "Pelevin",
+    "fath_name": "Vital'evich",
+    "dob": "04.05.2001",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "DomainChecker",
+    "name": "Krapivin",
+    "surname": "Stas",
+    "fath_name": "",
+    "dob": "23.04.1998",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "DomainChecker",
+    "name": "Vitaliy",
+    "surname": "Sladkoewka",
+    "fath_name": "",
+    "dob": "13.02.1988",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "DomainChecker",
+    "name": "Kirill",
+    "surname": "Haus",
+    "fath_name": "Eduardovich",
+    "dob": "03.07.1960",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "Kino",
+    "name": "Joanna",
+    "surname": "Stingray",
+    "fath_name": "",
+    "dob": "03.07.1960",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "DomainChecker",
+    "name": "Gennadiy",
+    "surname": "Pestrikov",
+    "fath_name": "Pavlovich",
+    "dob": "12.01.1999",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "Pumba",
+    "name": "Timon",
+    "surname": "Pumbovskiy",
+    "fath_name": "Timonovich",
+    "dob": "01.04.1995",
+    "role": "Leader"
+  },
+ 
+  {
+    "project": "Pumba",
+    "name": "Lion",
+    "surname": "King",
+    "fath_name": "",
+    "dob": "01.03.1994",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "Pumba",
+    "name": "Rafiki",
+    "surname": "Monkey",
+    "fath_name": "",
+    "dob": "01.04.1994",
+    "role": "Executor"
   }
 
 ]
