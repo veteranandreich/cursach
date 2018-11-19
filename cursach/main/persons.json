@@ -147,6 +147,24 @@
     "fath_name": "",
     "dob": "01.04.1994",
     "role": "Executor"
+  },
+ 
+  {
+    "project": "Pumba",
+    "name": "Pumba",
+    "surname": "Pumba",
+    "fath_name": "Pumba",
+    "dob": "28.02.1990",
+    "role": "Executor"
+  },
+ 
+  {
+    "project": "Pumba",
+    "name": "Anton",
+    "surname": "Antonov",
+    "fath_name": "Antonovich",
+    "dob": "05.05.1990",
+    "role": "Executor"
   }
 
 ]
