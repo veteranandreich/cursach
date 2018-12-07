@@ -4,6 +4,7 @@
     <thead class="bg-dark">
     <tr>
       <th style="text-align: center; color:white;">Project</th>
+      <th style="text-align: center; color:white;">ID</th>
       <th style="text-align: center; color:white;">Surname</th>
       <th style="text-align: center; color:white;">Name</th>
       <th style="text-align: center; color:white;">Middlename</th>
@@ -13,9 +14,12 @@
   </thead>
   <tbody>
   {% for person in x %}
-      {% if person.project == y %}
+      {% for pr in person.project %}
+      {% if pr == y %}
+      {% if person.role == "Leader" %}
       <tr>
-      <th style="text-align: center">{{ person.project }}</th>
+      <th style="text-align: center">{{ pr }}</th>
+      <td style="text-align: center">{{ person.id }}</td>
       <td style="text-align: center">{{ person.surname }}</td>
       <td style="text-align: center">{{ person.name }}</td>
       <td style="text-align: center">{{ person.fath_name }}</td>
@@ -23,6 +27,25 @@
       <td style="text-align: center">{{ person.role }}</td>
     </tr>
       {% endif %}
+          {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% for person in x %}
+      {% for pr in person.project %}
+      {% if pr == y %}
+      {% if person.role != "Leader" %}
+      <tr>
+      <th style="text-align: center">{{ pr }}</th>
+      <td style="text-align: center">{{ person.id }}</td>
+      <td style="text-align: center">{{ person.surname }}</td>
+      <td style="text-align: center">{{ person.name }}</td>
+      <td style="text-align: center">{{ person.fath_name }}</td>
+      <td style="text-align: center">{{ person.dob }}</td>
+      <td style="text-align: center">{{ person.role }}</td>
+    </tr>
+      {% endif %}
+          {% endif %}
+  {% endfor %}
   {% endfor %}
   </tbody>
 </table>

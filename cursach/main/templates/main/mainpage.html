@@ -22,28 +22,32 @@
       <td style="text-align: center">{{ project.end }}</td>
       <td style="text-align: center">
           {% for person in y %}
-              {% if person.project == project.name %}
+              {% for pr in person.project %}
+              {% if pr == project.name %}
               {% if person.role == "Leader" %}
-          <a href="persons" title="Learn more about {{ person.name }} {{ person.surname }}"> {{ person.name }} {{ person.surname }} </a>
+          <a href="persons/{{ pr }}" title="Learn more about {{ person.name }} {{ person.surname }}"> {{ person.name }} {{ person.surname }} </a>
               {% endif %}
               {% endif %}
+              {% endfor %}
               {% endfor %}
       </td>
       <td style="text-align: center">
            <div class="list-group">
           {% for person in y %}
-              {% if person.project == project.name %}
+              {% for pr in person.project %}
+              {% if pr == project.name %}
                   {% if person.role != "Leader" %}
-              <a href="persons" class="list-group-item" title="Learn more about {{ person.name }} {{ person.surname }}"> {{ person.name }} {{ person.surname }} </a>
+                <a href="persons/{{ pr }}" class="list-group-item" title="Learn more about {{ person.name }} {{ person.surname }}"> {{ person.name }} {{ person.surname }} </a>
               {% endif %}
               {% endif %}
+              {% endfor %}
           {% endfor %}
       </div>
       </td>
       {% for step in z %}
           {% if step.project == project.name %}
           {% if step.status == "Active" %}
-      <td style="text-align: center"> <a href="steps"> {{ step.num }} </a> </td>
+      <td style="text-align: center"> <a href="steps/{{ step.project }}"> {{ step.num }} </a> </td>
           {% endif %}
               {% endif %}
           {% endfor %}

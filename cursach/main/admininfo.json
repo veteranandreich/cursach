@@ -1,39 +1,32 @@
 [
-  {
-    "login": "admin",
-    "password": "admin",
-    "acclevel": "admin",
-    "project": ""
-
-  },
-
-  {
-    "login": "manager",
-    "password": "manager",
-    "acclevel": "manager",
-    "project": "Kino"
-
-  },
- 
-  {
-    "login": "vladimir_27_goncharov",
-    "password": "rabotaet",
-    "acclevel": "manager",
-    "project": "DomainChecker"
-  },
- 
-  {
-    "login": "Timon",
-    "password": "timon&pumba",
-    "acclevel": "manager",
-    "project": "Pumba"
-  },
- 
-  {
-    "login": null,
-    "password": null,
-    "acclevel": null,
-    "project": null
-  }
-
+    {
+        "login": "admin",
+        "password": "admin",
+        "acclevel": "admin",
+        "project": ""
+    },
+    {
+        "login": "manager",
+        "password": "manager",
+        "acclevel": "manager",
+        "project": "Kino"
+    },
+    {
+        "login": "vladimir_27_goncharov",
+        "password": "rabotaet",
+        "acclevel": "manager",
+        "project": "DomainChecker"
+    },
+    {
+        "login": "Timon",
+        "password": "timon&pumba",
+        "acclevel": "manager",
+        "project": "Pumba"
+    },
+    {
+        "login": "vladimir",
+        "password": "goncharov",
+        "acclevel": "manager",
+        "project": "Cursach"
+    }
 ]

@@ -19,92 +19,104 @@
         "doe": "15.08.1990",
         "status": "Active"
     },
-  {
-    "project": "DomainChecker",
-    "id": "4",
-    "num": "1",
-    "name": "Project creation",
-    "desc": "An idea is discussing",
-    "dos": "01.09.2018",
-    "doe": "01.09.2018",
-    "status": "Done"
-  },
- 
-  {
-    "project": "DomainChecker",
-    "id": "5",
-    "num": "2",
-    "name": "Technical task",
-    "desc": "Technical task shoul be thought over",
-    "dos": "02.09.2018",
-    "doe": "02.10.2018",
-    "status": "Done"
-  },
- 
-  {
-    "project": "DomainChecker",
-    "id": "6",
-    "num": "3",
-    "name": "Development",
-    "desc": "Until the ending date team should release beta-version",
-    "dos": "03.10.2018",
-    "doe": "03.12.2018",
-    "status": "Active"
-  },
- 
-  {
-    "project": "DomainChecker",
-    "id": "7",
-    "num": "4",
-    "name": "Collecting feedback",
-    "desc": "Team should collect feedback from beta-testers",
-    "dos": "04.12.2018",
-    "doe": "12.12.2018",
-    "status": "Not Ready"
-  },
- 
-  {
-    "project": "Pumba",
-    "id": "8",
-    "num": "1",
-    "name": "Script-writing",
-    "desc": "Team should write a script till the ending date",
-    "dos": "01.04.1995",
-    "doe": "01.08.1995",
-    "status": "Active"
-  },
- 
-  {
-    "project": "Pumba",
-    "id": "9",
-    "num": "2",
-    "name": "Filming",
-    "desc": "Team should film a movie ",
-    "dos": "05.08.1995",
-    "doe": "05.08.1996",
-    "status": "Not Ready"
-  },
- 
-  {
-    "project": "Pumba",
-    "id": "10",
-    "num": "3",
-    "name": "Editing",
-    "desc": "Team should montage their movie",
-    "dos": "05.08.1996",
-    "doe": "05.10.1996",
-    "status": "Not Ready"
-  },
- 
-  {
-    "project": "Pumba",
-    "id": "11",
-    "num": "4",
-    "name": "Premier show",
-    "desc": "Premier show on Los Angeles",
-    "dos": "01.12.1996",
-    "doe": "01.12.1996",
-    "status": "Not Ready"
-  }
-
+    {
+        "project": "DomainChecker",
+        "id": "4",
+        "num": "1",
+        "name": "Project creation",
+        "desc": "An idea is discussing",
+        "dos": "01.09.2018",
+        "doe": "01.09.2018",
+        "status": "Done"
+    },
+    {
+        "project": "DomainChecker",
+        "id": "5",
+        "num": "2",
+        "name": "Technical task",
+        "desc": "Technical task shoul be thought over",
+        "dos": "02.09.2018",
+        "doe": "02.10.2018",
+        "status": "Done"
+    },
+    {
+        "project": "DomainChecker",
+        "id": "6",
+        "num": "3",
+        "name": "Development",
+        "desc": "Until the ending date team should release beta-version",
+        "dos": "03.10.2018",
+        "doe": "03.12.2018",
+        "status": "Active"
+    },
+    {
+        "project": "DomainChecker",
+        "id": "7",
+        "num": "4",
+        "name": "Collecting feedback",
+        "desc": "Team should collect feedback from beta-testers",
+        "dos": "04.12.2018",
+        "doe": "12.12.2018",
+        "status": "Not Ready"
+    },
+    {
+        "project": "Pumba",
+        "id": "8",
+        "num": "1",
+        "name": "Script-writing",
+        "desc": "Team should write a script till the ending date",
+        "dos": "01.04.1995",
+        "doe": "01.08.1995",
+        "status": "Active"
+    },
+    {
+        "project": "Pumba",
+        "id": "9",
+        "num": "2",
+        "name": "Filming",
+        "desc": "Team should film a movie ",
+        "dos": "05.08.1995",
+        "doe": "05.08.1996",
+        "status": "Not Ready"
+    },
+    {
+        "project": "Pumba",
+        "id": "10",
+        "num": "3",
+        "name": "Editing",
+        "desc": "Team should montage their movie",
+        "dos": "05.08.1996",
+        "doe": "05.10.1996",
+        "status": "Not Ready"
+    },
+    {
+        "project": "Pumba",
+        "id": "11",
+        "num": "4",
+        "name": "Premier show",
+        "desc": "Premier show on Los Angeles",
+        "dos": "01.12.1996",
+        "doe": "01.12.1996",
+        "status": "Not Ready"
+    },
+    {
+        "project": "Cursach",
+        "id": 124,
+        "num": "1",
+        "name": "Test",
+        "desc": "test",
+        "dos": "01.09.2018",
+        "doe": "31.12.2018",
+        "status": "Done"
+    },
+    {
+        "project": "Cursach",
+        "id": "783",
+        "num": "2",
+        "name": "Test2",
+        "desc": "Test2",
+        "dos": "01.01.2019",
+        "doe": "01.02.2019",
+        "status": "Not Ready"
+    }
 ]

@@ -5,8 +5,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('login', views.login, name='login'),
     path('auth', views.auth, name='auth'),
-    path('steps', views.steps, name='steps'),
-    path('persons', views.persons, name='persons'),
+    path('steps/<project>', views.steps, name='steps'),
+    path('persons/<project>', views.persons, name='persons'),
     path('personsinfo', views.personsinfo, name='personsinfo'),
     path('stepsinfo', views.stepsinfo, name='stepssinfo'),
     path('addperson', views.addperson, name='addperson'),
@@ -14,5 +14,5 @@ urlpatterns = [
     path('addstep', views.addstep, name='addstep'),
     path('addproject', views.addproject, name='addproject'),
     path('editstep', views.editstep, name='editstep'),
-
+    path('addexperson', views.addexperson, name='addexperson')
 ]

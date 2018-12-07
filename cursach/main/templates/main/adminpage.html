@@ -12,15 +12,33 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" style="color: white" href="/">PROJECT.COM</a>
         <a class="btn btn-dark" href="/login" role="button">Login</a>
-        <a class="btn btn-dark" href="persons" role="button">Participants</a>
-        <a class="btn btn-dark" href="steps" role="button">Steps</a>
+        <a class="btn btn-dark" href="/persons/search" role="button">Participants</a>
+        <a class="btn btn-dark" href="/steps/search" role="button">Steps</a>
 </nav>
 {% if access == "admin" %}
-<div style ="margin-top: 4%; margin-left: 6%" class="row">
+<div style ="margin-top: 4%; margin-left: 2%" class="row">
 
-        <form action="addperson" style="" method="post"> {% csrf_token %}
+
+     <form action="addexperson" style="" method="post"> {% csrf_token %}
   <div class="form-group">
-      <h1>Add person to project</h1>
+      <h2>Add existing person</h2>
+  <label for="Project"><b>Project</b></label>
+    <input type="text" class="form-control" id="Project" name="project" placeholder="Kino">
+    <input type="hidden" class="form-control" value="{{ access }}" name="who">
+    <select multiple class="form-control" name="persel">
+    <option disabled>Участники</option>
+    {% for person in persons %}
+        <option value="{{ person.id }}">{{ person.name }} {{ person.surname }} ({{ person.role }})</option>
+    {% endfor %}
+   </select>
+   <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</form>
+
+
+    <form action="addperson" style="margin-left: 2%; width: 20%" method="post"> {% csrf_token %}
+  <div class="form-group">
+      <h2>Add person to project</h2>
       <input type="hidden" class="form-control" value="{{ access }}" name="who">
       <label for="Project"><b>Project name in which person is involved</b></label>
     <input type="text" class="form-control" id="Project" name="projectname" placeholder="Kino">
@@ -40,7 +58,7 @@
 
         <form style="margin-left: 2%; width: 20%" action="addadmin" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Add administrator or manager</h1>
+      <h2>Add administrator or manager</h2>
       <label for="login"><b>Login</b></label>
     <input type="text" class="form-control" id="login" name="login" placeholder="admin">
       <label for="pass"><b>Password</b></label>
@@ -55,12 +73,10 @@
 
         <form style="margin-left: 2%" action="addstep" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Add step to project</h1>
+      <h2>Add step to project</h2>
       <input type="hidden" class="form-control" value="{{ access }}"  name="who">
       <label for="Project"><b>Project</b></label>
     <input type="text" class="form-control" id="Project" name="projectname" placeholder="Kino">
-      <label for="ID"><b>Step ID</b></label>
-    <input type="text" class="form-control" id="ID" name="ID" placeholder="4">
       <label for="Num"><b>Step number</b></label>
     <input type="text" class="form-control" id="Num" name="num" placeholder="4">
       <label for="Name"><b>Name</b></label>
@@ -79,9 +95,7 @@
 
     <form style="margin-left: 2%" action="addproject" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Add project</h1>
-      <label for="id"><b>ID</b></label>
-    <input type="text" class="form-control" id="id" name="ID" placeholder="3">
+      <h2>Add project</h2>
       <label for="Name"><b>Project name</b></label>
     <input type="text" class="form-control" id="Name" name="name" placeholder="Pumba">
       <label for="Dos"><b>Date of start</b></label>
@@ -94,7 +108,7 @@
 
     <form style="margin-left: 2%" action="editstep" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Edit step</h1>
+      <h2>Edit step</h2>
       <input type="hidden" class="form-control" value="{{ access }}"  name="who">
       <label for="id"><b>Step ID</b></label>
     <input type="text" class="form-control" id="id" name="ID" placeholder="3">
@@ -109,11 +123,27 @@
 {% endif %}
 
 {% if access == "manager" %}
-    <div style ="margin-top: 4%; margin-left: 16%" class="row">
+    <div style ="margin-top: 4%;" ><h1 align="center">You are "{{ project }}" manager</h1></div>
+    <div style ="margin-top: 2%; margin-left: 16%" class="row">
+
+    <form action="addexperson" style="" method="post"> {% csrf_token %}
+  <div class="form-group">
+      <h2>Add existing person</h2>
+    <input type="hidden" class="form-control" value="{{ access }}" name="who">
+    <input type="hidden" class="form-control" value="{{ project }}" name="project">
+    <select multiple class="form-control" name="persel">
+    <option disabled>Участники</option>
+    {% for person in persons %}
+        <option value="{{ person.id }}">{{ person.name }} {{ person.surname }} ({{ person.role }})</option>
+    {% endfor %}
+   </select>
+   <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</form>
 
     <form action="addperson" style="" method="post"> {% csrf_token %}
   <div class="form-group">
-      <h1>Add person to project</h1>
+      <h2>Add person to project</h2>
       <input type="hidden" class="form-control" value="{{ access }}" name="who">
     <input type="hidden" class="form-control" value="{{ project }}" name="projectname">
       <label for="Name"><b>Person's name</b></label>
@@ -132,11 +162,9 @@
 
     <form style="margin-left: 10%" action="addstep" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Add step to project</h1>
+      <h2>Add step to project</h2>
     <input type="hidden" class="form-control" value="{{ access }}" name="who">
       <input type="hidden" class="form-control" id="Project" value="{{ project }}" name="projectname">
-      <label for="ID"><b>Step ID</b></label>
-    <input type="text" class="form-control" id="ID" name="ID" placeholder="4">
       <label for="Num"><b>Step number</b></label>
     <input type="text" class="form-control" id="Num" name="num" placeholder="4">
       <label for="Name"><b>Name</b></label>
@@ -155,7 +183,7 @@
 
     <form style="margin-left: 10%" action="editstep" method="post"> {% csrf_token %}
   <div class="form-group" >
-      <h1>Edit step</h1>
+      <h2>Edit step</h2>
       <input type="hidden" class="form-control" id="Project" value="{{ project }}" name="projectname">
       <input type="hidden" class="form-control" value="{{ access }}"  name="who">
       <label for="id"><b>Step ID</b></label>

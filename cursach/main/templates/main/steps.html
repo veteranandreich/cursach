@@ -12,12 +12,12 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" style="color: white" href="/">PROJECT.COM</a>
         <a class="btn btn-dark" href="/login" role="button">Login</a>
-        <a class="btn btn-dark" href="persons" role="button">Participants</a>
-        <a class="btn btn-dark" href="steps" role="button">Steps</a>
+        <a class="btn btn-dark" href="/persons/search" role="button">Participants</a>
+        <a class="btn btn-dark" href="/steps/search" role="button">Steps</a>
 </nav>
 <div style ="margin-top: 15%;" class="container">
         <div style="height: 100%; width: 50%; margin-left:24%">
-<form action="stepsinfo" method="post"> {% csrf_token %}
+<form action="/stepsinfo" method="post"> {% csrf_token %}
   <div class="form-group">
       <label for="InputKey"><b>Project name</b></label>
     <input type="text" class="form-control" id="InputKey" name="key" placeholder="Enter project name to get more information about steps">
