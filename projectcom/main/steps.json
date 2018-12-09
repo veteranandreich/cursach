@@ -101,7 +101,7 @@
     },
     {
         "project": "Cursach",
-        "id": 124,
+        "id": "124",
         "num": "1",
         "name": "Test",
         "desc": "test",
@@ -117,6 +117,6 @@
         "desc": "Test2",
         "dos": "01.01.2019",
         "doe": "01.02.2019",
-        "status": "Not Ready"
+        "status": "Active"
     }
 ]

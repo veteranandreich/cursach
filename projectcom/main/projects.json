@@ -1,18 +1,18 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Kino",
         "start": "summer 1981",
         "end": "15.08.1990"
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "DomainChecker",
         "start": "01.09.2018",
         "end": "01.09.2019"
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Pumba",
         "start": "12.11.2018",
         "end": "12.11.2019"
