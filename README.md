@@ -1,2 +1,2 @@
 # cursach
-System for project managment
+System for project management
