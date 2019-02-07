@@ -1,2 +1,2 @@
 # cursach
-Курсач
+System for project managment
